@@ -1,0 +1,9 @@
+<div *ngIf="!finished" class="quizz-options">
+  <button 
+    *ngFor="let option of questionSelected.options"
+    (click)="playerChoose(option.alias)"
+    class="btn-option"
+  >
+    {{ option.name }}
+  </button>
+</div>
